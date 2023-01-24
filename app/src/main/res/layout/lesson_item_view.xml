@@ -7,7 +7,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
@@ -20,7 +20,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <View
-            android:layout_width="5dp"
+            android:id="@+id/colorView"
+            android:layout_width="6dp"
             android:layout_height="match_parent"
             android:background="#6627B5" />
 
@@ -41,34 +42,36 @@
                     android:layout_height="wrap_content"
                     android:text="10:00"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/classNameTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_weight="50"
+                    android:layout_weight="3"
                     android:text="Силовая тренировка"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/durationTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="110"
+                    android:layout_weight="6"
                     android:text="1ч. 15мин."
+                    android:gravity="end"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
 
                 <TextView
                     android:id="@+id/endTimeTextView"
@@ -76,41 +79,58 @@
                     android:layout_height="wrap_content"
                     android:text="11:00"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="14sp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:src="@drawable/ic_baseline_person_outline_24"
-                    app:tint="@color/black" />
-
-                <TextView
-                    android:id="@+id/trainerTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxWidth="250dp"
-                    android:text="Григорьев Ярослав"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|end"
-                    android:layout_marginStart="10dp"
-                    android:src="@drawable/ic_baseline_location_on_24"
-                    app:tint="@color/black" />
-
-                <TextView
-                    android:id="@+id/locationTextView"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:text="Студия 2"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:orientation="horizontal"
+                    android:layout_weight="4">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_baseline_person_outline_24"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/trainerTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="250dp"
+                        android:layout_gravity="center"
+                        android:text="Григорьев Ярослав"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="5"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/locationTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_gravity="end"
+                        android:text="Студия 2"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
 
             </LinearLayout>
 
