@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/scheduleFragment"
+        android:title="Расписание"
+        android:icon="@drawable/ic_baseline_calendar_today_24" />
+
+    <item android:id="@+id/FFragment"
+        android:title="Заявки"
+        android:icon="@drawable/ic_baseline_check_box_24" />
+
+    <item android:id="@+id/SFragment"
+        android:title="Добавить"
+        android:icon="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <item android:id="@+id/TFragment"
+        android:title="Чат"
+        android:icon="@drawable/ic_baseline_chat_bubble_24" />
+
+    <item android:id="@+id/EFragment"
+        android:title="Ещё"
+        android:icon="@drawable/ic_baseline_more_horiz_24" />
+</menu>
